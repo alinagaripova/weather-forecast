@@ -16,10 +16,7 @@ header {
 .date-block {
     height: 100%;
 }
-
-
-
-
+/*анимация начало*/
 @keyframes moveLeft {                           /*сдвиг влево видимого дня полностью*/
     100% {
         transform: translateX(-100%);
@@ -69,6 +66,63 @@ header {
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
+
+@keyframes moveRight {                           /*сдвиг влево видимого дня полностью*/
+    0% {
+        transform: translate(0%, -200%);
+    }
+    100% {
+        transform: translate(100%,-200%);
+    }
+}
+@keyframes moveRight2 {                           /*сдвиг влево видимого дня полностью*/
+    0% {
+        transform: translate(-100%, -100%);
+    }
+    100% {
+        transform: translate(0%,-100%);
+    }
+}
+@keyframes moveRight3 {                           /*сдвиг влево видимого дня полностью*/
+    0% {
+        transform: translate(0%, -100%);
+    }
+    100% {
+        transform: translate(100%,-100%);
+    }
+}
+@keyframes moveRight4 {                           /*сдвиг влево видимого дня полностью*/
+    0% {
+        transform: translate(-100%, 0%);
+    }
+    100% {
+        transform: translate(0%,0%);
+    }
+}
+
+.moveRight{                           /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveRight2{                           /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveRight2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveRight3{                           /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveRight3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveRight4{                           /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveRight4;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
 .opacity {
     opacity: 0;
 }
@@ -79,36 +133,7 @@ header {
     display: none;
 }
 
-/*header .day-2-header{*/
-    /*animation-name: moveLeft;*/
-    /*animation-duration: 1s;*/
-    /*animation-fill-mode: forwards;*/
-/*}*/
-/*main .day-2-main{*/
-    /*animation-name: moveLeft;*/
-    /*animation-duration: 1s;*/
-    /*animation-fill-mode: forwards;*/
-/*}*/
-/*header .day-3-header{*/
-    /*animation-name: moveLeft2;*/
-    /*animation-duration: 1s;*/
-    /*animation-fill-mode: forwards;*/
-/*}*/
-
-/*main .day-3-main{*/
-    /*animation-name: moveLeft2;*/
-    /*animation-duration: 1s;*/
-    /*animation-fill-mode: forwards;*/
-/*}*/
-
-
-
-
-
-
-
-
-
+/*анимация конец*/
 
 .date-text{
     height: 3.5em;
@@ -209,6 +234,7 @@ li {
     width: 33.4%;
     max-width: 120px;
     height: 100%;
+    cursor:pointer;
 
 }
 li svg{
