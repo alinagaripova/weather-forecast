@@ -5,7 +5,7 @@ body{
 .box {
     height: 575px;
     width: 100%;
-    max-width: 360px;
+    max-width: 415px;
     position: relative;
 }
 header {
@@ -38,15 +38,15 @@ main {
     position: absolute;
 }
 .c-1{
-    left: 32.5%;
+    left: 31.7%;
     top:20.8%;
 }
 .c-2{
-    left: 29.4%;
+    left: 29%;
     top:17.4%;
 }
 .c-3{
-    left: 26.3%;
+    left: 26%;
     top:14%;
 }
 .c-4{
@@ -282,7 +282,6 @@ li span{
         padding: 20px;
     }
     .box {
-        width: 360px;
         margin: auto;
 
     }
