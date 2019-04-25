@@ -1,7 +1,6 @@
 body{
     margin: 0;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 0;
 }
 .box {
     height: 575px;
@@ -113,8 +112,7 @@ ul {
 li {
     list-style: none;
     float: left;
-    width: 33.4%;
-    max-width: 120px;
+    width: 33.3%;
     height: 100%;
     cursor:pointer;
 
@@ -133,6 +131,8 @@ li span{
     text-align: center;
     color: white;
 }
+
+
 /*анимация начало*/
 @keyframes moveLeft {                           /*сдвиг влево */
     100% {
@@ -249,5 +249,16 @@ li span{
 .invisible {
     display: none;
 }
-
 /*анимация конец*/
+
+@media screen and (min-width:450px) {
+    body{
+        padding: 20px;
+    }
+    .box {
+        width: 360px;
+        margin: auto;
+
+    }
+
+}
