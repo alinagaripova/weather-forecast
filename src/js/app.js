@@ -11,6 +11,28 @@ const header3 = document.querySelector('.day-3-header');
 const main3 = document.querySelector('.day-3-main');
 const http = new Http('https://gist.githubusercontent.com/anonymous/feb1b31516f3e36a14b29657701f18d2/raw/eaa544aed7e3bdee37c6caa2a515f1d4c38fbd4f/weather.json');
 
+let weatherList = [];
+async function loadData() {
+    try {
+        const response = await http.getWeather();
+        weatherList = await response.json();
+        if (weatherList == null) {
+            weatherList = []
+        }
+        rebuildWeatherData(weatherList);
+    } catch (e) {
+        // e -> ошибка
+        console.log('error');
+    } finally {
+        console.log('Данные загружены');
+    }
+}
+
+function rebuildWeatherData(weatherList){
+
+}
+
+
 firstDay.addEventListener('click', () => {
     firstDay.className = 'today checked';
     secondDay.className = 'tomorrow';
