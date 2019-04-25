@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.box {
+    height: 575px;
+    width: 100%;
+    max-width: 360px;
+    position: relative;
+}
+header {
+    height: 8.35%;
+    background-color: #3eb1df;
+}
+.date-block {
+    height: 100%;
+}
+
+
+
+
+@keyframes moveLeft {                           /*сдвиг влево видимого дня полностью*/
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes moveLeft2 {                          /*сдвиг влево невидимого дня полностью*/
+    0% {
+        transform: translate(100%, -100%);
+    }
+    100% {
+        transform: translate(0%, -100%);
+    }
+}
+@keyframes moveLeft3 {                          /*сдвиг влево невидимого дня полностью*/
+    0% {
+        transform: translate(0%, -100%);
+    }
+    100% {
+        transform: translate(-100%,-100%);
+    }
+}
+@keyframes moveLeft4 {                          /*сдвиг влево невидимого дня полностью*/
+    0% {
+        transform: translate(100%, -200%);
+    }
+    100% {
+        transform: translate(0%, -200%);
+    }
+}
+.moveLeft{                           /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveLeft2{                         /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveLeft2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveLeft3{                         /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveLeft3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveLeft4{                         /*буду присваивать класс через JS при нажатии*/
+    animation-name: moveLeft4;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.opacity {
+    opacity: 0;
+}
+.visible {
+    display: block;
+}
+.invisible {
+    display: none;
+}
+
+/*header .day-2-header{*/
+    /*animation-name: moveLeft;*/
+    /*animation-duration: 1s;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+/*main .day-2-main{*/
+    /*animation-name: moveLeft;*/
+    /*animation-duration: 1s;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+/*header .day-3-header{*/
+    /*animation-name: moveLeft2;*/
+    /*animation-duration: 1s;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+
+/*main .day-3-main{*/
+    /*animation-name: moveLeft2;*/
+    /*animation-duration: 1s;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+.date-text{
+    height: 3.5em;
+    line-height: 3.5em;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: white;
+}
+main {
+    height: 70.95%;
+    background-color: #21a5da;
+}
+.center {
+    padding-top: 5%;
+    position: relative;
+}
+.circle {
+    position: absolute;
+}
+.c-1{
+    left: 32.5%;
+    top:20.8%;
+}
+.c-2{
+    left: 29.4%;
+    top:17.4%;
+}
+.c-3{
+    left: 26.3%;
+    top:14%;
+}
+.c-4{
+    left: 23.3%;
+    top:11%;
+}
+.c-5{
+    left: 19.1%;
+    top:7%;
+}
+.weather-text {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 12%;
+}
+.weather-icon{
+    width: 22.5%;
+    margin: auto;
+}
+.weather-temp{
+    text-align: center;
+    padding-top: 9%;
+    position: relative;
+    height: 116px;
+}
+.weather-temp span {
+    font-family: 'Open Sans', bold, sans-serif;
+    font-size: 116px;
+    padding: 0;
+    margin: 0;
+    color: white;
+
+}
+.weather-temp svg {
+    position: absolute;
+    top:38%;
+    right: 29%;
+
+}
+.city-name {
+    text-align: center;
+    padding-top:5%;
+}
+.city-name span{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+}
+
+footer {
+    height: 20.7%;
+    background-color: #3eb1df;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-height: 119.2px;
+}
+li {
+    list-style: none;
+    float: left;
+    width: 33.4%;
+    max-width: 120px;
+    height: 100%;
+
+}
+li svg{
+    width: 48.8%;
+    margin: 16% 25% 5% 25%;
+}
+li span{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
