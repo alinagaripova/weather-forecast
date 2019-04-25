@@ -1,4 +1,5 @@
 
+const firstDay = document.querySelector('.today');
 const secondDay = document.querySelector('.tomorrow');
 const thirdDay = document.querySelector('.third-day');
 const header1 = document.querySelector('.day-1-header');
@@ -8,32 +9,46 @@ const main2 = document.querySelector('.day-2-main');
 const header3 = document.querySelector('.day-3-header');
 const main3 = document.querySelector('.day-3-main');
 
+firstDay.addEventListener('click', () => {
+    console.log('tod');
+    if (header2.className.includes('active')) {
+        header2.className = 'date-block moveRight3';
+        main2.className = 'center moveRight3';
+        header1.className = 'date-block moveRight4 active';
+        main1.className = 'center moveRight4 active';
+
+    }
+    if (header3.className.includes('active')){
+        header3.className = 'date-block moveRight';
+        main3.className = 'center moveRight';
+        header1.className = 'date-block moveRight4 active';
+        main1.className = 'center moveRight4 active';
+    }
+});
 
 secondDay.addEventListener('click', () => {
-    console.log('tom');
-    if (header1.className == 'date-block day-1-header visible active') {
+    if (header1.className.includes('active')) {
         header1.className = 'date-block moveLeft';
         main1.className = 'center moveLeft';
         header2.className = 'date-block moveLeft2 active';
         main2.className = 'center moveLeft2 active';
     }
-    // if (header3.className == 'date-block moveLeft4 active') {
-    //     header3.className = 'date-block moveLeft';
-    //     main3.className = 'center moveLeft';
-    //     header2.className = 'date-block moveLeft2 active';
-    //     main2.className = 'center moveLeft2 active';
-    // }
+    if (header3.className.includes('active')) {
+        header3.className = 'date-block moveRight';
+        main3.className = 'center moveRight';
+        header2.className = 'date-block moveRight2 active';
+        main2.className = 'center moveRight2 active';
+    }
 });
 thirdDay.addEventListener('click', () => {
-    console.log('third');
-    if (header2.className == 'date-block moveLeft2 active'){
+    if (header2.className.includes('active')){
         header1.className = 'date-block moveLeft';
         main1.className = 'center moveLeft';
         header2.className = 'date-block moveLeft3';
         main2.className = 'center moveLeft3';
         header3.className = 'date-block moveLeft4 active';
         main3.className = 'center moveLeft4 active';
-    } if (header1.className == 'date-block day-1-header visible active') {
+    } if (header1.className.includes('active')) {
         header1.className = 'date-block moveLeft moveLeft';
         main1.className = 'center moveLeft moveLeft';
         header2.className = 'date-block moveLeft3 opacity';
@@ -41,5 +56,4 @@ thirdDay.addEventListener('click', () => {
         header3.className = 'date-block moveLeft4 active';
         main3.className = 'center moveLeft4 active';
     }
-
 });
