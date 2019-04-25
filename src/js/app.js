@@ -10,7 +10,10 @@ const header3 = document.querySelector('.day-3-header');
 const main3 = document.querySelector('.day-3-main');
 
 firstDay.addEventListener('click', () => {
-    console.log('tod');
+    firstDay.className = 'today checked';
+    secondDay.className = 'tomorrow';
+    thirdDay.className = 'third-day';
+
     if (header2.className.includes('active')) {
         header2.className = 'date-block moveRight3';
         main2.className = 'center moveRight3';
@@ -27,6 +30,10 @@ firstDay.addEventListener('click', () => {
 });
 
 secondDay.addEventListener('click', () => {
+    firstDay.className = 'today';
+    secondDay.className = 'tomorrow checked';
+    thirdDay.className = 'third-day';
+
     if (header1.className.includes('active')) {
         header1.className = 'date-block moveLeft';
         main1.className = 'center moveLeft';
@@ -41,6 +48,10 @@ secondDay.addEventListener('click', () => {
     }
 });
 thirdDay.addEventListener('click', () => {
+    firstDay.className = 'today';
+    secondDay.className = 'tomorrow';
+    thirdDay.className = 'third-day checked';
+
     if (header2.className.includes('active')){
         header1.className = 'date-block moveLeft';
         main1.className = 'center moveLeft';

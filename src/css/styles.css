@@ -48,22 +48,22 @@ header {
 }
 .moveLeft{                           /*буду присваивать класс через JS при нажатии*/
     animation-name: moveLeft;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 .moveLeft2{                         /*буду присваивать класс через JS при нажатии*/
     animation-name: moveLeft2;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 .moveLeft3{                         /*буду присваивать класс через JS при нажатии*/
     animation-name: moveLeft3;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 .moveLeft4{                         /*буду присваивать класс через JS при нажатии*/
     animation-name: moveLeft4;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -103,22 +103,22 @@ header {
 
 .moveRight{                           /*буду присваивать класс через JS при нажатии*/
     animation-name: moveRight;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 .moveRight2{                           /*буду присваивать класс через JS при нажатии*/
     animation-name: moveRight2;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 .moveRight3{                           /*буду присваивать класс через JS при нажатии*/
     animation-name: moveRight3;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 .moveRight4{                           /*буду присваивать класс через JS при нажатии*/
     animation-name: moveRight4;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -236,6 +236,9 @@ li {
     height: 100%;
     cursor:pointer;
 
+}
+.checked {
+    background-color: #1c9dd1;
 }
 li svg{
     width: 48.8%;
