@@ -296,9 +296,9 @@ li span{
         height: 120px;
     }
 }
-@media screen and (min-height:736px) {
+@media screen and (min-height:730px) {
     .box {
-        height: 736px;
+        height: 760px;
     }
     .weather-text {
         margin-bottom: 10%;
