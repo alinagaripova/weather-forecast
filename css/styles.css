@@ -296,6 +296,15 @@ li span{
         height: 120px;
     }
 }
+@media screen and (max-height:480px) {
+    .box {
+        height: 480px;
+    }
+    .weather-temp {
+        padding-top: 5%;
+    }
+
+}
 @media screen and (min-height:730px) {
     .box {
         height: 760px;
