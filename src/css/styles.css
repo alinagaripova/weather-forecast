@@ -249,12 +249,11 @@ li span{
     display: none;
 }
 /*анимация конец*/
-@media screen and (min-width:360px) {
-    .box {
-        margin: auto;
-
-    }
-}
+/*@media screen and (min-width:360px) {*/
+    /*.box {*/
+        /*margin: auto;*/
+    /*}*/
+/*}*/
 @media screen and (max-width:350px) {
     .c-1{
         left: 31.5%;
@@ -286,7 +285,7 @@ li span{
 
     }
 }
-@media screen and (min-height:650px) and (max-height: 850px){
+@media screen and (min-height:650px) {
     .box {
         height: 650px;
     }
@@ -295,5 +294,23 @@ li span{
     }
     footer {
         height: 120px;
+    }
+}
+@media screen and (min-height:736px) {
+    .box {
+        height: 736px;
+    }
+    .weather-text {
+        margin-bottom: 10%;
+    }
+    footer {
+        height: 120px;
+    }
+    .weather-temp {
+        padding-top: 15%;
+    }
+    .date-text {
+        height: 4.5em;
+        line-height: 4.5em;
     }
 }
