@@ -1,4 +1,3 @@
-import {Http} from './http.js';
 
 const firstDay = document.querySelector('.today');
 const secondDay = document.querySelector('.tomorrow');
@@ -9,29 +8,6 @@ const header2 = document.querySelector('.day-2-header');
 const main2 = document.querySelector('.day-2-main');
 const header3 = document.querySelector('.day-3-header');
 const main3 = document.querySelector('.day-3-main');
-const http = new Http('https://gist.githubusercontent.com/anonymous/feb1b31516f3e36a14b29657701f18d2/raw/eaa544aed7e3bdee37c6caa2a515f1d4c38fbd4f/weather.json');
-
-let weatherList = [];
-async function loadData() {
-    try {
-        const response = await http.getWeather();
-        weatherList = await response.json();
-        if (weatherList == null) {
-            weatherList = []
-        }
-        rebuildWeatherData(weatherList);
-    } catch (e) {
-        // e -> ошибка
-        console.log('error');
-    } finally {
-        console.log('Данные загружены');
-    }
-}
-
-function rebuildWeatherData(weatherList){
-
-}
-
 
 firstDay.addEventListener('click', () => {
     firstDay.className = 'today checked';

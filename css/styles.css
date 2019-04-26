@@ -17,8 +17,8 @@ header {
 }
 
 .date-text{
-    height: 3.5em;
-    line-height: 3.5em;
+    height: 4em;
+    line-height: 4em;
     margin: 0;
     text-align: center;
     vertical-align: middle;
@@ -38,23 +38,23 @@ main {
     position: absolute;
 }
 .c-1{
-    left: 31.7%;
-    top:20.8%;
+    left: 32.7%;
+    top:20.5%;
 }
 .c-2{
-    left: 29%;
+    left:29.9%;
     top:17.4%;
 }
 .c-3{
-    left: 26%;
+    left: 27%;
     top:14%;
 }
 .c-4{
-    left: 23.3%;
+    left: 24.5%;
     top:11%;
 }
 .c-5{
-    left: 19.1%;
+    left: 21.1%;
     top:7%;
 }
 .weather-text {
@@ -63,7 +63,7 @@ main {
     font-size: 24px;
     color: white;
     text-align: center;
-    margin-bottom: 12%;
+    margin-bottom: 11%;
 }
 .weather-icon{
     width: 22.5%;
@@ -249,12 +249,11 @@ li span{
     display: none;
 }
 /*анимация конец*/
-@media screen and (min-width:360px) {
-    .box {
-        margin: auto;
-
-    }
-}
+/*@media screen and (min-width:360px) {*/
+    /*.box {*/
+        /*margin: auto;*/
+    /*}*/
+/*}*/
 @media screen and (max-width:350px) {
     .c-1{
         left: 31.5%;
@@ -286,7 +285,7 @@ li span{
 
     }
 }
-@media screen and (min-height:650px) and (max-height: 850px){
+@media screen and (min-height:650px) {
     .box {
         height: 650px;
     }
@@ -295,5 +294,23 @@ li span{
     }
     footer {
         height: 120px;
+    }
+}
+@media screen and (min-height:736px) {
+    .box {
+        height: 736px;
+    }
+    .weather-text {
+        margin-bottom: 10%;
+    }
+    footer {
+        height: 120px;
+    }
+    .weather-temp {
+        padding-top: 15%;
+    }
+    .date-text {
+        height: 4.5em;
+        line-height: 4.5em;
     }
 }
