@@ -33,6 +33,7 @@ async function loadData() {                              //запрос данн
     } catch (e) {
         // e -> ошибка
         console.log('error');
+        alert('Ошибка загрузки данных');
     } finally {
         console.log('Данные загружены');
     }
