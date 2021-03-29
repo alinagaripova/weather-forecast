@@ -323,3 +323,20 @@ li span{
         line-height: 4.5em;
     }
 }
+.weather-additional{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+.weather-additional-img{
+    width: 30px;
+    margin-right: 5px;
+}
+.additional-item{
+    display: flex;
+    align-items: center;
+
+}
